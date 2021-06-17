@@ -19,7 +19,7 @@ class Stars {
         } catch (e) {
             console.log(e.message)
         }
-        if (this.isValid && numOfRating > 0) {
+        if (this.isValid && numOfRating >= 0) {
             this.init();
         }
     }
@@ -114,4 +114,4 @@ class Stars {
 }
 
 const star1 = new Stars(".stars-container", 3);
-const star2 = new Stars(".stars-container", 2);
+const star2 = new Stars(".stars-container", 0);
